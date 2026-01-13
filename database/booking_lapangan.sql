@@ -1,4 +1,4 @@
-## 🗄️ Database Schema
+##  Database Schema
 
 ### Tabel `users`
 ```sql
@@ -53,6 +53,6 @@ INSERT INTO lapangan (nama_lapangan, jenis, harga_per_jam) VALUES
 ### Data Dummy Admin
 ```sql
 INSERT INTO users (nama, email, password, role) VALUES
-('Admin', 'admin@lapangan.com', '$2y$10$encrypted_password', 'admin');
+('Admin', 'admin@lapangan.com', '$2y$12$It/1qnpSBw4X1B.xUGGcS.z0SqYKs37ay02rfokHQoX3HHo00Mkvm', 'admin');
 -- Password: admin123 (harus di-hash dengan password_hash())
 ```

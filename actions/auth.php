@@ -7,7 +7,7 @@ if ($action === 'register') {
     $nama = trim($_POST['nama'] ?? '');
     $email = trim($_POST['email'] ?? '');
     $password = $_POST['password'] ?? '';
-    $confirm = $_POST['confirm'] ?? '';
+    $confirm = $_POST['confirm_password'] ?? '';
     if (!$nama || !$email || !$password || !$confirm) {
         header('Location: ../register.php?error=' . urlencode('Semua field wajib diisi'));
         exit();
